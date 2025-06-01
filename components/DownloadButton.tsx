@@ -37,7 +37,6 @@ export default function DownloadButton({ resumeRef }: DownloadButtonProps): JSX.
         windowHeight: element.scrollHeight,
       });
 
-      const imgData = canvas.toDataURL('image/jpeg', 1.0);
       const pdfWidth = 216;
       const pdfHeight = 356;
       const dpi = 96;
