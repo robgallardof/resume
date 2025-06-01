@@ -1,0 +1,184 @@
+{
+  "personal": {
+    "name": "Roberto Gallardo",
+    "title": "Full Stack .NET Developer | Software Architecture | Azure & DevOps",
+    "location": "Guadalajara, Jalisco, México",
+    "email": "contact@lrobertogallardo.mx",
+    "phone": "+52 229 208 8490",
+    "website": "https://robertogallardo.mx",
+    "github": "https://github.com/robgallardof",
+    "linkedin": "https://linkedin.com/in/robgallardof"
+  },
+
+  "downloadButton": {
+    "text": "Download Resume",
+    "title": "Download PDF",
+    "ariaLabel": "Download PDF"
+  },
+
+  "sections": {
+    "contact": {
+      "title": "Let’s connect"
+    },
+    "about": {
+      "title": "About Me",
+      "data": "I’m a Full Stack Developer specialized in building scalable software using .NET on the backend and Vue, React or Next.js on the frontend. I care about clean code, modular architecture, and long-term maintainability. I’m self-taught, proactive, and always seeking smarter ways to solve real problems."
+    },
+    "skills": {
+      "title": "Core Skills",
+      "subtitle": "These are the technologies and practices I specialize in.",
+      "data": [
+        {
+          "category": "Backend Development",
+          "items": [
+            { "name": "C#", "level": 95 },
+            { "name": ".NET 5–8", "level": 95 },
+            { "name": "ASP.NET Core", "level": 90 },
+            { "name": "Minimal APIs", "level": 90 },
+            { "name": "Clean Architecture", "level": 95 },
+            { "name": "CQRS / SOLID", "level": 90 },
+            { "name": "EF Core", "level": 85 },
+            { "name": "MongoDB", "level": 90 },
+            { "name": "SQL Server", "level": 90 },
+            { "name": "Authentication & JWT", "level": 90 },
+            { "name": "WebSockets / SignalR", "level": 85 },
+            { "name": "Unit & Integration Testing", "level": 90 },
+            { "name": "Dependency Injection", "level": 95 },
+            { "name": "REST API Design", "level": 90 }
+          ]
+        },
+        {
+          "category": "Frontend Development",
+          "items": [
+            { "name": "React", "level": 85 },
+            { "name": "Next.js", "level": 85 },
+            { "name": "Vue.js", "level": 80 },
+            { "name": "React Native", "level": 75 },
+            { "name": "Tailwind CSS", "level": 95 },
+            { "name": "ShadCN UI", "level": 90 }
+          ]
+        },
+        {
+          "category": "DevOps & Tooling",
+          "items": [
+            { "name": "Docker", "level": 85 },
+            { "name": "Kubernetes", "level": 75 },
+            { "name": "Azure DevOps", "level": 90 },
+            { "name": "CI/CD Pipelines", "level": 90 },
+            { "name": "Git / GitHub", "level": 95 },
+            { "name": "Nginx", "level": 85 },
+            { "name": "Cloudflare", "level": 85 },
+            { "name": "Linux (Fedora / Ubuntu)", "level": 85 },
+            { "name": "Android Studio / APK Build", "level": 75 }
+          ]
+        },
+        {
+          "category": "Professional Strengths",
+          "items": [
+            { "name": "Problem Solving" },
+            { "name": "Architecture & Scalability" },
+            { "name": "Team Collaboration" },
+            { "name": "Client Communication" },
+            { "name": "Self-Taught & Proactive" }
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "data": [
+        {
+          "company": "Geodis",
+          "role": "Full Stack .NET Developer",
+          "period": "Jan 2023 – Present",
+          "details": [
+            "Upgraded legacy .NET 5/6 services to .NET 8 with modern architecture patterns",
+            "Implemented containerized APIs using Docker and Kubernetes",
+            "Designed and automated CI/CD pipelines in Azure DevOps with secret/environment management",
+            "Developed internal dashboards using Vue 3 and Composition API",
+            "Migrated data flows from SQL Server to MongoDB Atlas with secured access networks",
+            "Wrote custom aggregation pipelines and JavaScript-based query utilities for Mongo updates",
+            "Applied Clean Architecture and test-driven development (xUnit, Moq, FluentAssertions)"
+          ]
+        },
+        {
+          "company": "Bansí",
+          "role": ".NET Developer",
+          "period": "Feb 2022 – Dec 2022",
+          "details": [
+            "Refactored monolithic .NET Framework 4.8 modules into .NET 5 services",
+            "Integrated biometric authentication with Watson Mini and Digital Persona",
+            "Migrated mobile push notifications from GCM to FCM with custom Kotlin Android app",
+            "Enhanced legacy WCF and ASP.NET apps using C#, JavaScript and CSS",
+            "Improved performance of SQL Server and Informix procedures and scheduled jobs",
+            "Used Postman and Git tools (Sourcetree, TortoiseGit) for validation and version control"
+          ]
+        },
+        {
+          "company": "Megacable",
+          "role": "Developer (VB.NET / C# / Java)",
+          "period": "Nov 2019 – Jan 2022",
+          "details": [
+            "Optimized SQL Server procedures and legacy VB.NET modules for installers",
+            "Converted SSRS reports from Visual Studio 2019 to 2012 for compatibility",
+            "Maintained VBG DLLs for offline field device usage",
+            "Updated business logic and data flows in Mulesoft (Java, SaaS)",
+            "Used Cherwell for incident tracking and Git Extensions for version control"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "data": [
+        {
+          "degree": "Master’s in Software Architecture (In Progress)",
+          "institution": "AICAD Business School",
+          "period": "2024 – 2025"
+        },
+        {
+          "degree": "Bachelor in Administrative Computer Systems",
+          "institution": "Universidad Veracruzana",
+          "period": "2015 – 2019"
+        },
+        {
+          "degree": "Technical Programming Degree",
+          "institution": "CBTIS 66",
+          "period": "2012 – 2015"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "data": [
+        {
+          "name": "ASP.NET Core + React",
+          "issuer": "Udemy",
+          "year": "2022",
+          "url": "https://www.udemy.com/certificate/UC-d8044950-59cf-4f7c-bddf-aefc501b"
+        },
+        {
+          "name": "Mobile App Development",
+          "issuer": "Google",
+          "year": "2019",
+          "url": "https://developers.google.com/learn/certification"
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "data": [
+        {
+          "name": "Spanish",
+          "level": "Native",
+          "percentage": 100
+        },
+        {
+          "name": "English",
+          "level": "Professional Working Proficiency",
+          "percentage": 80
+        }
+      ]
+    }
+  }
+}
