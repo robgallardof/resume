@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { JSX } from "react";
-import { useTranslation } from "react-i18next";
-import { Badge } from "@/components/ui/badge";
+import { JSX } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Badge } from '@/components/ui/badge';
 
 /**
  * Represents a single skill.
@@ -21,7 +21,7 @@ interface SkillCategory {
 }
 
 /**
- * Displays the categorized "Skills" section with compact badges.
+ * Displays the categorized "Skills" section with minimalistic badges.
  *
  * Loads categories and their respective skills from `sections.skills.data`
  * and uses the section title from `sections.skills.title`.
@@ -31,27 +31,27 @@ interface SkillCategory {
 export default function SkillsSection(): JSX.Element | null {
   const { t } = useTranslation();
 
-  const skills = t("sections.skills.data", {
+  const skills = t('sections.skills.data', {
     returnObjects: true,
   }) as SkillCategory[];
 
-  const title = t("sections.skills.title", "Skills");
+  const title = t('sections.skills.title', 'Skills');
 
   if (!Array.isArray(skills) || skills.length === 0) return null;
 
   return (
-    <section className="w-full space-y-3 print:space-y-2">
-      <h2 className="text-base font-semibold text-primary tracking-tight print:text-sm">
+    <section className="w-full space-y-2 print:space-y-1">
+      <h2 className="text-lg font-semibold text-primary tracking-tight print:text-base">
         {title}
       </h2>
 
       {skills.map((category) => (
         <div key={category.category} className="space-y-1">
-          <h3 className="text-xs font-medium text-muted-foreground print:text-[11px]">
+          <h3 className="text-sm text-muted-foreground font-medium print:text-[11px]">
             {category.category}
           </h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
+          <div className="flex flex-wrap gap-1.5 print:gap-1">
             {category.items.map((skill) => (
               <Badge
                 key={skill.name}

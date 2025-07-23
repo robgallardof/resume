@@ -3,19 +3,17 @@
     "name": "Roberto Gallardo",
     "title": "Desarrollador Full Stack .NET | Arquitectura de Software | Azure & DevOps",
     "location": "Guadalajara, Jalisco, México",
-    "email": "contacto@lrobertogallardo.mx",
-    "phone": "+52 229 208 8490",
-    "website": "https://robertogallardo.mx",
+    "email": "contact@robertogallardo.dev",
+    "phone": "+52 813 701 8228",
+    "website": "https://robertogallardo.dev",
     "github": "https://github.com/robgallardof",
     "linkedin": "https://linkedin.com/in/robgallardof"
   },
-
   "downloadButton": {
     "text": "Descargar CV",
     "title": "Descargar PDF",
     "ariaLabel": "Descargar PDF"
   },
-
   "sections": {
     "contact": {
       "title": "Conectemos"
@@ -92,38 +90,69 @@
           "role": "Desarrollador Full Stack .NET",
           "period": "Ene 2023 – Presente",
           "details": [
-            "Actualicé servicios heredados de .NET 5/6 a .NET 8 con patrones modernos de arquitectura",
-            "Implementé APIs contenedorizadas usando Docker y Kubernetes",
-            "Diseñé y automatizé pipelines CI/CD en Azure DevOps con gestión de entornos y secretos",
-            "Desarrollé dashboards internos usando Vue 3 y Composition API",
-            "Migré flujos de datos de SQL Server a MongoDB Atlas con redes seguras",
-            "Escribí pipelines de agregación y utilidades de consulta en JavaScript para MongoDB",
-            "Apliqué Clean Architecture y desarrollo orientado a pruebas (xUnit, Moq, FluentAssertions)"
+            "Migración de servicios heredados en .NET 5/6 a .NET 8 utilizando Clean Architecture y patrones CQRS",
+            "Desarrollo de APIs REST contenedorizadas con Docker y orquestadas mediante Kubernetes",
+            "Automatización de pipelines CI/CD en Azure DevOps con despliegues segmentados por entornos y secretos",
+            "Construcción de dashboards internos con Vue para monitoreo y consumo de servicios asíncronos",
+            "Migración de flujos de datos desde SQL Server a MongoDB Atlas con redes privadas seguras",
+            "Desarrollo de scripts avanzados de agregación y utilidades personalizadas en JavaScript para MongoDB",
+            "Creación de herramienta CLI en Node.js para automatizar la ejecución de scripts de MongoDB",
+            "Uso de MetaSharp.Metasephora para la orquestación de tareas multihilo en procesos de alta carga",
+            "Uso de ActionTemplates para renderizado dinámico y generación de código estilo Razor en tiempo de ejecución",
+            "Ejecución y mantenimiento de scripts SQL de alto impacto para limpieza y operaciones masivas de datos",
+            "Aplicación constante de principios SOLID, DRY y KISS en toda la base de código"
           ]
         },
         {
           "company": "Bansí",
-          "role": "Desarrollador .NET",
+          "role": "Coordinador B de Construcción de Software (.NET Developer)",
           "period": "Feb 2022 – Dic 2022",
           "details": [
-            "Refactoricé módulos monolíticos .NET Framework 4.8 a servicios .NET 5",
-            "Integré autenticación biométrica con Watson Mini y Digital Persona",
-            "Migré notificaciones push de GCM a FCM con app Kotlin personalizada",
-            "Mejoré apps WCF y ASP.NET usando C#, JavaScript y CSS",
-            "Optimicé procedimientos y jobs en SQL Server e Informix",
-            "Utilicé Postman y herramientas Git (Sourcetree, TortoiseGit) para validación y control de versiones"
+            "Lideré la migración y refactorización de sistemas en .NET Framework 4.8 hacia microservicios en .NET 5",
+            "Desarrollo de APIs REST integradas con bases de datos Informix y SQL Server utilizando C#",
+            "Personalización y mantenimiento de plantillas dinámicas y lógica de renderizado para herramientas internas",
+            "Mantenimiento y extensión de servicios WCF y aplicaciones web ASP.NET (C#, JavaScript, CSS)",
+            "Integración de sistemas biométricos con librerías personalizadas en C# (Watson Mini, Digital Persona, U ARE U 4500)",
+            "Migración del sistema de notificaciones push de GCM a Firebase Cloud Messaging (FCM)",
+            "Desarrollo de una app nativa en Kotlin para validar la entrega de notificaciones móviles push",
+            "Pruebas y validación de endpoints de notificación utilizando Postman y apps internas",
+            "Optimización y mantenimiento de procedimientos almacenados, jobs, vistas y estructuras de tablas (SQL Server e Informix)",
+            "Uso de Jira para gestión ágil de proyectos y Git (TortoiseGit, Sourcetree) para control de versiones",
+            "Supervisión de la coordinación y entrega de tareas en equipos de construcción de software"
           ]
         },
         {
           "company": "Megacable",
-          "role": "Desarrollador (VB.NET / C# / Java)",
+          "role": "Desarrollador VB.NET / C# / Java",
           "period": "Nov 2019 – Ene 2022",
           "details": [
-            "Optimicé procedimientos SQL Server y módulos VB.NET para instaladores",
-            "Convertí reportes SSRS de Visual Studio 2019 a 2012",
-            "Mantuve DLLs VBG para dispositivos de campo offline",
-            "Actualicé lógica de negocio en Mulesoft (Java, SaaS)",
-            "Utilicé Cherwell para seguimiento de incidencias y Git Extensions para control de versiones"
+            "Creación, modificación y optimización de procedimientos almacenados, vistas, jobs y tablas en SQL Server",
+            "Configuración de linked servers y gestión de permisos para acceso seguro entre servidores",
+            "Desarrollo de lógica de negocio para promociones, control de merma e IMEIs en Megamóvil",
+            "Desarrollo de una herramienta de conversión de reportes SSRS (.rdl) de Visual Studio 2019 a 2012 usando C#",
+            "Mantenimiento y mejora de aplicaciones heredadas en VB.NET y DLLs VBG para dispositivos offline de campo",
+            "Integración de flujos SOA y SaaS en Mulesoft usando Java para automatización de procesos y APIs",
+            "Análisis y resolución de problemas operativos con documentación de soluciones a largo plazo",
+            "Uso de Cherwell para seguimiento de incidencias y Git Extensions para control de versiones",
+            "Aplicación de principios KISS y DRY para el desarrollo de sistemas backend mantenibles"
+          ]
+        },
+        {
+          "company": "Freelance",
+          "role": "Arquitecto de Software & Desarrollador Full Stack",
+          "period": "2022 – Presente",
+          "details": [
+            "ARQO (Frontend): Desarrollo completo de la interfaz de usuario con Next.js, React, Tailwind CSS y TypeScript",
+            "Diseño basado en componentes reutilizables, accesibles y responsive",
+            "Gestión de rutas centralizadas, i18n multilingüe y despliegue automatizado con Vercel",
+            "Integración de autenticación basada en JWT, SignalR para tiempo real y flujos de usuario condicionales",
+            "Firmmo (Backend + Firma Digital): Arquitectura basada en CQRS, DTOs, repositorios y separación de responsabilidades",
+            "Firma electrónica criptográfica avanzada en documentos PDF con PDFSharp, iText7 y certificados del SAT",
+            "Manejo de firmantes internos y externos, recordatorios automáticos y control de expiración",
+            "Base de datos MongoDB con modelos embebidos, proyecciones y agregaciones complejas",
+            "Notificaciones en tiempo real con SignalR y almacenamiento seguro en Azure Blob Storage con tokens SAS",
+            "Configuración de túneles seguros, dominios y subdominios con Cloudflare Zero Trust",
+            "Despliegue continuo con Azure DevOps, entornos staging y producción, pruebas automatizadas y rollback"
           ]
         }
       ]
@@ -152,16 +181,130 @@
       "title": "Certificaciones",
       "data": [
         {
+          "name": "Conexión a MongoDB en C#",
+          "issuer": "MongoDB",
+          "year": "2023",
+          "credentialId": "MDB87qooiwabi",
+          "url": "https://learn.mongodb.com/c/C07-pO2qST-rzeApxWIzgw"
+        },
+        {
+          "name": "Operaciones CRUD en MongoDB con C#",
+          "issuer": "MongoDB",
+          "year": "2023",
+          "credentialId": "MDB0or7o79pmp",
+          "url": "https://learn.mongodb.com/c/Y4cj8B2MSuCdO2_anIljDA"
+        },
+        {
+          "name": "Uso de MongoDB con C#",
+          "issuer": "MongoDB",
+          "year": "2023",
+          "credentialId": "MDBc5jxv2894q",
+          "url": "https://learn.mongodb.com/c/mpqHVFHUTleiJnVqG8iXuA"
+        },
+        {
+          "name": "Agregaciones en MongoDB con C#",
+          "issuer": "MongoDB",
+          "year": "2023",
+          "credentialId": "MDBmdhvpc5cnc",
+          "url": "https://learn.mongodb.com/c/b2QixvjXRUOyWl6rUBQV2Q"
+        },
+        {
+          "name": "Scrum Developer",
+          "issuer": "International Scrum Institute",
+          "year": "2023",
+          "credentialId": "19418805267196",
+          "url": "https://www.scrum-institute.org/badges/19418805267196"
+        },
+        {
+          "name": "CSS",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "65ddd9469beb",
+          "url": "https://www.hackerrank.com/certificates/65ddd9469beb"
+        },
+        {
+          "name": "Node (Básico)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "426ae976f878",
+          "url": "https://www.hackerrank.com/certificates/426ae976f878"
+        },
+        {
+          "name": "Node.js (Intermedio)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "60063d463205",
+          "url": "https://www.hackerrank.com/certificates/60063d463205"
+        },
+        {
+          "name": "Resolución de Problemas",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "390d0c961629",
+          "url": "https://www.hackerrank.com/certificates/390d0c961629"
+        },
+        {
+          "name": "Resolución de Problemas (Intermedio)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "68be3f847d9d",
+          "url": "https://www.hackerrank.com/certificates/68be3f847d9d"
+        },
+        {
+          "name": "React (Básico)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "deacd62dfb4f",
+          "url": "https://www.hackerrank.com/certificates/deacd62dfb4f"
+        },
+        {
+          "name": "API REST (Intermedio)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "3beab8a77c18",
+          "url": "https://www.hackerrank.com/certificates/3beab8a77c18"
+        },
+        {
+          "name": "SQL (Avanzado)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "fb778ddf8401",
+          "url": "https://www.hackerrank.com/certificates/fb778ddf8401"
+        },
+        {
+          "name": "SQL (Básico)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "e4e2b91d8a27",
+          "url": "https://www.hackerrank.com/certificates/e4e2b91d8a27"
+        },
+        {
+          "name": "JavaScript (Básico)",
+          "issuer": "HackerRank",
+          "year": "2022",
+          "credentialId": "c0515ea7004c",
+          "url": "https://www.hackerrank.com/certificates/c0515ea7004c"
+        },
+        {
           "name": "ASP.NET Core + React",
           "issuer": "Udemy",
           "year": "2022",
-          "url": "https://www.udemy.com/certificate/UC-d8044950-59cf-4f7c-bddf-aefc501b"
+          "credentialId": "UC-d8044950-59cf-4f7c-bddf-aefc501bf9f9",
+          "url": "https://www.udemy.com/certificate/UC-d8044950-59cf-4f7c-bddf-aefc501bf9f9/"
         },
         {
-          "name": "Desarrollo de Apps Móviles",
+          "name": "Angular: Crea páginas web con filtros desde cero (Angular 10+)",
+          "issuer": "Udemy",
+          "year": "2021",
+          "credentialId": "UC-4eb2a5fb-9643-42b0-8318-f2cdd5a6e042",
+          "url": "https://www.udemy.com/certificate/UC-4eb2a5fb-9643-42b0-8318-f2cdd5a6e042/"
+        },
+        {
+          "name": "Desarrollo de apps móviles",
           "issuer": "Google",
           "year": "2019",
-          "url": "https://developers.google.com/learn/certification"
+          "credentialId": "M4Y 9S9 H3Q",
+          "url": "https://learndigital.withgoogle.com/activate/validate-certificate-code"
         }
       ]
     },
