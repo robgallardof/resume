@@ -22,7 +22,7 @@ import { Separator } from "@/components/ui/separator";
  *
  * The layout is constrained for screen and optimized for print.
  *
- * @returns {JSX.Element | null} The rendered resume content or null if translations missing.
+ * @returns {JSX.Element | null} The rendered resume content or null if translations are missing.
  */
 export default function MainContent(): JSX.Element | null {
   const { t } = useTranslation();
@@ -36,28 +36,42 @@ export default function MainContent(): JSX.Element | null {
         w-full max-w-[720px] mx-auto
         px-4 py-8
         font-sans text-gray-900 dark:text-white
-        text-sm leading-tight
+        text-[0.875rem] leading-tight
         space-y-8
-        print:max-w-full print:px-6 print:py-4
+
+        print:w-full print:max-w-[190mm] print:px-[24pt] print:py-[18pt]
+        print:text-[10pt] print:leading-[1.4]
       "
     >
       {/* Resume header with name and professional title */}
-      <header className="text-center space-y-1">
-        <h1 className="text-3xl font-bold tracking-tight text-primary leading-snug">
+      <header className="text-center space-y-1 print:space-y-0">
+        <h1
+          className="
+            text-3xl font-bold tracking-tight text-primary leading-snug
+            print:text-[16pt] print:leading-tight print:mb-1
+          "
+        >
           {name}
         </h1>
-        <p className="text-base text-muted-foreground">{title}</p>
+        <p
+          className="
+            text-base text-muted-foreground
+            print:text-[10pt] print:text-muted-foreground print:leading-tight
+          "
+        >
+          {title}
+        </p>
       </header>
 
-      {/* Structured sections separated visually */}
+      {/* Structured resume sections with visual separators */}
       <Separator />
       <AboutSection />
+      <Separator />
+      <LanguagesSection />
       <Separator />
       <ContactSection />
       <Separator />
       <SkillsSection />
-      <Separator />
-      <LanguagesSection />
       <Separator />
       <ExperienceSection />
       <Separator />
