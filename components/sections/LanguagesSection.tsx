@@ -19,14 +19,17 @@ export default function LanguagesSection(): JSX.Element | null {
   if (!languages?.length) return null;
 
   return (
-    <section className="w-full space-y-4">
-      <h2 className="text-lg font-semibold text-primary tracking-tight">
+    <section className="w-full space-y-2 print:space-y-1">
+      <h2 className="text-lg font-semibold text-primary tracking-tight print:text-base">
         {t('sections.languages.title', 'Languages')}
       </h2>
 
-      <ul className="space-y-2">
+      <ul className="space-y-1">
         {languages.map((lang) => (
-          <li key={lang.name} className="text-muted-foreground">
+          <li
+            key={lang.name}
+            className="text-sm text-muted-foreground leading-relaxed print:text-[11px] print:leading-snug"
+          >
             <span className="font-medium">{lang.name}</span> — {lang.level}
           </li>
         ))}
