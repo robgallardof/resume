@@ -11,49 +11,20 @@ import { NextRequest, NextResponse } from "next/server";
  * stored here only as its HMAC token (never in plain text).
  */
 
-const COOKIE_NAME = "cv_access";
-const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
-const LOGIN_PATH = "/__access";
-const LOGOUT_PATH = "/__logout";
+import {
+  COOKIE_MAX_AGE,
+  COOKIE_NAME,
+  LOGIN_PATH,
+  LOGOUT_PATH,
+  accessToken,
+  escapeHtml,
+  expectedToken,
+  pickLanguage as pickLanguageFrom,
+  safeEqual,
+  safeNext,
+} from "@/lib/access";
+
 const FAILED_LOGIN_DELAY_MS = 800;
-const TOKEN_LABEL = "cv-access-v1";
-/** HMAC-SHA256(key = default password, message = TOKEN_LABEL). */
-const DEFAULT_TOKEN = "4cfbfe8573ecf61c3670455f98b040c9da49444d98c857ff2f7ba776434d3fdc";
-
-const encoder = new TextEncoder();
-
-/** HMAC-SHA256 of a fixed label, keyed with the password, as hex. */
-async function accessToken(password: string): Promise<string> {
-  const key = await crypto.subtle.importKey(
-    "raw",
-    encoder.encode(password),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"]
-  );
-  const signature = await crypto.subtle.sign("HMAC", key, encoder.encode(TOKEN_LABEL));
-  return Array.from(new Uint8Array(signature), (b) => b.toString(16).padStart(2, "0")).join("");
-}
-
-/** Length-independent string comparison. */
-function safeEqual(a: string, b: string): boolean {
-  let diff = a.length ^ b.length;
-  for (let i = 0; i < Math.max(a.length, b.length); i++) {
-    diff |= (a.charCodeAt(i) || 0) ^ (b.charCodeAt(i) || 0);
-  }
-  return diff === 0;
-}
-
-/** Only same-site relative paths are allowed as a post-login destination. */
-function safeNext(value: unknown): string {
-  return typeof value === "string" && value.startsWith("/") && !value.startsWith("//") && !value.startsWith("/\\")
-    ? value
-    : "/";
-}
-
-function escapeHtml(value: string): string {
-  return value.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
-}
 
 type Copy = { title: string; intro: string; label: string; button: string; error: string; show: string; hide: string };
 
@@ -79,9 +50,7 @@ const COPY: Record<"en" | "es", Copy> = {
 };
 
 function pickLanguage(request: NextRequest): "en" | "es" {
-  const cookie = request.cookies.get("language")?.value;
-  if (cookie === "en" || cookie === "es") return cookie;
-  return /^es\b/i.test(request.headers.get("accept-language") ?? "") ? "es" : "en";
+  return pickLanguageFrom(request.cookies.get("language")?.value, request.headers.get("accept-language"));
 }
 
 /** Decorative, data-free résumé silhouette shown blurred behind the modal. */
@@ -260,8 +229,7 @@ function loginPage(request: NextRequest, next: string, failed: boolean) {
 
 export async function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
-  const password = process.env.CV_PASSWORD;
-  const expected = password ? await accessToken(password) : DEFAULT_TOKEN;
+  const expected = await expectedToken(process.env.CV_PASSWORD);
 
   if (pathname === LOGOUT_PATH) {
     const response = NextResponse.redirect(new URL("/", request.url), 303);

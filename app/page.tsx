@@ -1,82 +1,46 @@
-'use client';
+"use client";
 
-import { JSX, useRef } from 'react';
-import DownloadButton from '../components/DownloadButton';
-import LanguageToggle from '../components/LanguageToggle';
-import MainContent from '../components/sections/MainContent';
+import { JSX } from "react";
+import { useTranslation } from "react-i18next";
+import { FiLogOut } from "react-icons/fi";
+import DownloadButton from "@/components/DownloadButton";
+import LanguageToggle from "@/components/LanguageToggle";
+import ResumeView from "@/components/resume/ResumeView";
+import { getResume, isLang } from "@/lib/resume";
 
 /**
- * Page component for displaying the resume with language toggle,
- * floating download FAB, and vertical scroll sidebar-style layout on large screens.
- *
- * @returns {JSX.Element} Resume layout with scrollable content and persistent footer.
+ * Résumé page: toolbar (language, sign out), the résumé sheet and the floating PDF button.
+ * Only reachable after the password gate in proxy.ts.
  */
 export default function Page(): JSX.Element {
-  const resumeRef = useRef<HTMLDivElement>(null);
+  const { i18n } = useTranslation();
+  const resume = getResume(isLang(i18n.resolvedLanguage) ? i18n.resolvedLanguage : "en");
 
   return (
-    <main
-      className="
-        min-h-screen w-full
-        bg-gradient-to-br from-muted/30 via-white to-muted
-        dark:from-neutral-800 dark:via-neutral-900 dark:to-black
-        text-gray-900 dark:text-white
-        flex flex-col font-sans
-        relative
-      "
-    >
-      {/* Language toggle fixed top right */}
-      <div className="absolute top-4 right-4 z-30 print:hidden">
+    <main className="min-h-screen bg-slate-100 bg-[radial-gradient(1200px_600px_at_0%_-10%,rgb(109_40_217/0.12),transparent_60%),radial-gradient(900px_500px_at_100%_110%,rgb(14_165_233/0.12),transparent_60%)] px-4 pb-28 pt-6 sm:px-6">
+      <nav className="mx-auto mb-6 flex w-full max-w-[960px] items-center justify-end gap-2 print:hidden">
         <LanguageToggle />
-      </div>
+        <a
+          href="/__logout"
+          className="flex items-center gap-1.5 rounded-md px-2 py-1 text-sm text-slate-500 transition-colors hover:text-violet-700"
+        >
+          <FiLogOut className="h-4 w-4" aria-hidden="true" />
+          {resume.labels.logout}
+        </a>
+      </nav>
 
-      {/* Floating circular download button (bottom-right corner) */}
-      <div className="fixed bottom-6 right-6 z-40 print:hidden">
-        <DownloadButton resumeRef={resumeRef} />
-      </div>
+      <ResumeView resume={resume} />
 
-      {/* Scrollable CV container with vertical scrollbar on large screens */}
-      <div
-        className="
-          flex-grow w-full max-w-screen-md mx-auto
-          bg-white dark:bg-[var(--card-dark,#1a1a1a)]
-          rounded-xl shadow-lg
-          overflow-y-auto
-          transition-colors
-          px-4 sm:px-6 md:px-8 lg:px-12 py-12
-          lg:h-[calc(100vh-120px)]
-          print:px-0 print:py-0 print:w-[8.5in] print:min-h-[11in] print:m-auto print:overflow-visible
-        "
-        ref={resumeRef}
-        tabIndex={0}
-        aria-label="Scrollable resume content"
-      >
-        <MainContent />
-      </div>
-
-      {/* Footer */}
-      <footer
-        className="
-          w-full max-w-screen-lg mx-auto
-          px-4 py-6 mt-8
-          text-center text-sm
-          text-muted-foreground
-          print:hidden select-none
-        "
-      >
-        <p>
-          Developed by{' '}
-          <a
-            href="https://robertogallardo.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-primary transition-colors"
-          >
-            Roberto Gallardo
-          </a>
-          . © {new Date().getFullYear()}. All rights reserved.
-        </p>
+      <footer className="mx-auto mt-8 max-w-[960px] text-center text-sm text-slate-500 print:hidden">
+        <a href="https://robertogallardo.dev" target="_blank" rel="noopener noreferrer" className="hover:text-violet-700">
+          robertogallardo.dev
+        </a>{" "}
+        · © {new Date().getFullYear()} Roberto Gallardo
       </footer>
+
+      <div className="fixed bottom-6 right-6 z-40">
+        <DownloadButton resume={resume} />
+      </div>
     </main>
   );
 }

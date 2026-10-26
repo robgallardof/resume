@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Roberto Gallardo",
-    "title": "Desarrollador Full Stack .NET | Arquitecto de Software | Herramientas de IA y DevOps",
+    "title": "Arquitecto de Software · Desarrollador Full Stack .NET",
     "location": "Guadalajara, Jalisco, México",
     "email": "robgallardofl@gmail.com",
     "phone": "+52 813 701 8228",
@@ -12,20 +12,48 @@
   "downloadButton": {
     "text": "Descargar CV",
     "title": "Descargar PDF",
-    "ariaLabel": "Descargar PDF"
+    "ariaLabel": "Descargar PDF",
+    "loading": "Generando PDF…",
+    "error": "No se pudo generar el PDF. Inténtalo de nuevo."
   },
   "sections": {
     "contact": {
-      "title": "Conectemos"
+      "title": "Contacto"
     },
     "about": {
       "title": "Sobre mí",
-      "data": "Desarrollador Full Stack con Maestría en Arquitectura de Software y experiencia práctica en todas las generaciones de .NET — desde .NET Framework 2.0, 3.5 y 4.x hasta .NET Core y .NET 5 a 10 y 11 — incluidas las migraciones entre ellas. Construyo servicios backend con C#, Clean Architecture y CQRS, frontends con Vue, React y Next.js, y los despliego con Docker, Kubernetes y Azure DevOps. Últimamente también desarrollo herramientas de IA: servidores MCP, flujos de agentes y límites que permiten que los agentes de IA hagan trabajo real de forma segura. Me importa un código claro, mantenible y fácil de entender para quien sigue."
+      "data": "Soy arquitecto de software y vivo en Guadalajara. Llevo siete años construyendo y arreglando sistemas en .NET — desde aplicaciones viejas en .NET Framework 2.0 hasta .NET 10 y 11 — y me gusta la parte que casi todos evitan: entender el código heredado lo suficiente para cambiarlo sin romperlo.\n\nDesde hace cuatro años trabajo con IA todos los días, de ChatGPT a Codex, Claude Code y Antigravity. La trato como a un compañero rápido cuyo trabajo igual hay que revisar, por eso construyo mis propios servidores MCP y límites para que haga trabajo real.\n\nMe importan los diseños claros, las estimaciones realistas y un código que la siguiente persona pueda tomar sin tener que llamarme."
     },
     "skills": {
       "title": "Habilidades Clave",
       "subtitle": "Estas son las tecnologías y prácticas en las que me especializo.",
       "data": [
+        {
+          "category": "Arquitectura de Software",
+          "items": [
+            {
+              "name": "Clean Architecture"
+            },
+            {
+              "name": "CQRS"
+            },
+            {
+              "name": "SOLID · DRY · KISS"
+            },
+            {
+              "name": "Diseño de APIs REST"
+            },
+            {
+              "name": "Microservicios y Contenedores"
+            },
+            {
+              "name": "Modernización de Legacy (.NET Framework a .NET 10)"
+            },
+            {
+              "name": "Revisión de Código y Guía Técnica"
+            }
+          ]
+        },
         {
           "category": "Desarrollo Backend",
           "items": [
@@ -47,14 +75,6 @@
             },
             {
               "name": "APIs Minimalistas",
-              "level": 90
-            },
-            {
-              "name": "Arquitectura Limpia",
-              "level": 95
-            },
-            {
-              "name": "CQRS / SOLID",
               "level": 90
             },
             {
@@ -84,10 +104,6 @@
             {
               "name": "Inyección de Dependencias",
               "level": 95
-            },
-            {
-              "name": "Diseño de APIs REST",
-              "level": 90
             },
             {
               "name": "VB.NET"
@@ -174,16 +190,22 @@
           ]
         },
         {
-          "category": "IA y Herramientas para Agentes",
+          "category": "Ingeniería Asistida por IA (4 años)",
           "items": [
+            {
+              "name": "Codex"
+            },
             {
               "name": "Claude Code"
             },
             {
-              "name": "ChatGPT / Codex"
+              "name": "Antigravity"
             },
             {
-              "name": "Gemini / Antigravity"
+              "name": "ChatGPT"
+            },
+            {
+              "name": "Gemini CLI"
             },
             {
               "name": "Cursor"
@@ -198,7 +220,7 @@
               "name": "Desarrollo de Servidores MCP"
             },
             {
-              "name": "Flujos y Límites para Agentes de IA"
+              "name": "Flujos de Agentes, Límites y Revisión"
             }
           ]
         },
@@ -209,16 +231,16 @@
               "name": "Resolución de Problemas"
             },
             {
-              "name": "Arquitectura y Escalabilidad"
+              "name": "Comunicación Clara"
             },
             {
-              "name": "Trabajo en Equipo"
+              "name": "Responsabilidad"
             },
             {
-              "name": "Comunicación con Clientes"
+              "name": "Enseñanza y Documentación"
             },
             {
-              "name": "Autodidacta y Proactivo"
+              "name": "Aprendizaje Continuo"
             }
           ]
         }
@@ -232,29 +254,14 @@
           "role": "Desarrollador Full Stack .NET",
           "period": "Ene 2023 – Presente",
           "details": [
-            "Migración de servicios heredados en .NET 5/6 a .NET 8 utilizando Clean Architecture y patrones CQRS",
-            "Desarrollo de APIs REST contenedorizadas con Docker y orquestadas mediante Kubernetes",
-            "Automatización de pipelines CI/CD en Azure DevOps con despliegues segmentados por entornos y secretos",
-            "Construcción de dashboards internos con Vue para monitoreo y consumo de servicios asíncronos",
-            "Migración de flujos de datos desde SQL Server a MongoDB Atlas con redes privadas seguras",
-            "Desarrollo de scripts avanzados de agregación y utilidades personalizadas en JavaScript para MongoDB",
-            "Creación de herramienta CLI en Node.js para automatizar la ejecución de scripts de MongoDB",
-            "Uso de MetaSharp.Metasephora para la orquestación de tareas multihilo en procesos de alta carga",
-            "Uso de ActionTemplates para renderizado dinámico y generación de código estilo Razor en tiempo de ejecución",
-            "Ejecución y mantenimiento de scripts SQL de alto impacto para limpieza y operaciones masivas de datos",
-            "Aplicación constante de principios SOLID, DRY y KISS en toda la base de código"
-          ]
-        },
-        {
-          "company": "Código abierto",
-          "role": "Creador y Mantenedor",
-          "period": "2025 – Presente",
-          "details": [
-            "RepoRinse: CLI local y determinista en Rust que mantiene limpios los repositorios y añade límites en los hooks nativos de Claude Code, Codex, Gemini CLI y Cursor; instalación y desinstalación exactas con manifests",
-            "davinci-resolve-mcp: servidor MCP para editar en DaVinci Resolve con un productor de IA — cortes verticales/horizontales, movimiento, subtítulos, música a tiempo y revisión antes del render",
-            "social-publisher-mcp: servidor MCP que funciona como community manager con IA para video corto en TikTok, Instagram, Facebook y YouTube",
-            "declaracion: asistente de impuestos personales en México dentro de un agente de IA — lee CFDI, calcula ISR e IVA (RESICO) y los datos se quedan en local",
-            "wikdoc: convierte cualquier carpeta de código en una base de conocimiento local con embeddings y RAG sobre Ollama"
+            "Migré servicios heredados de .NET 5/6 a .NET 8 y los reorganicé con Clean Architecture y CQRS.",
+            "Desarrollo APIs REST que corren en contenedores Docker sobre Kubernetes.",
+            "Armé el CI/CD en Azure DevOps con entornos separados y secretos bien acotados.",
+            "Construí tableros internos en Vue.js para seguir los servicios asíncronos mientras corren.",
+            "Migré flujos de datos de SQL Server a MongoDB Atlas por redes privadas.",
+            "Escribo los pipelines de agregación y scripts de MongoDB para el trabajo de datos complejo, y una pequeña CLI en Node.js que los ejecuta en cada entorno.",
+            "Orquesto cargas multihilo pesadas con MetaSharp.Metasephora y genero código estilo Razor en tiempo de ejecución con ActionTemplates.",
+            "Mantengo los scripts SQL de limpiezas de datos y actualizaciones masivas."
           ]
         },
         {
@@ -262,17 +269,12 @@
           "role": "Coordinador B de Construcción de Software (.NET Developer)",
           "period": "Feb 2022 – Dic 2022",
           "details": [
-            "Lideré la migración y refactorización de sistemas en .NET Framework 4.8 hacia microservicios en .NET 5",
-            "Desarrollo de APIs REST integradas con bases de datos Informix y SQL Server utilizando C#",
-            "Personalización y mantenimiento de plantillas dinámicas y lógica de renderizado para herramientas internas",
-            "Mantenimiento y extensión de servicios WCF y aplicaciones web ASP.NET (C#, JavaScript, CSS)",
-            "Integración de sistemas biométricos con librerías personalizadas en C# (Watson Mini, Digital Persona, U ARE U 4500)",
-            "Migración del sistema de notificaciones push de GCM a Firebase Cloud Messaging (FCM)",
-            "Desarrollo de una app nativa en Kotlin para validar la entrega de notificaciones móviles push",
-            "Pruebas y validación de endpoints de notificación utilizando Postman y apps internas",
-            "Optimización y mantenimiento de procedimientos almacenados, jobs, vistas y estructuras de tablas (SQL Server e Informix)",
-            "Uso de Jira para gestión ágil de proyectos y Git (TortoiseGit, Sourcetree) para control de versiones",
-            "Supervisión de la coordinación y entrega de tareas en equipos de construcción de software"
+            "Encabecé la migración de .NET Framework 4.8 a microservicios en .NET 5 con Clean Architecture.",
+            "Construí APIs REST en C# sobre Informix y SQL Server y afiné los procedimientos, vistas y jobs detrás de ellas.",
+            "Conecté lectores biométricos (Watson Mini, Digital Persona, U.are.U 4500) con librerías propias en C#.",
+            "Migré las notificaciones push de GCM a Firebase Cloud Messaging e hice una app pequeña en Kotlin para probarlas de punta a punta.",
+            "Mantuve servicios WCF y aplicaciones ASP.NET y armé plantillas flexibles para renderizado dinámico.",
+            "Coordiné tareas de construcción entre equipos con Jira y Git."
           ]
         },
         {
@@ -280,15 +282,12 @@
           "role": "Desarrollador VB.NET / C# / Java",
           "period": "Nov 2019 – Ene 2022",
           "details": [
-            "Creación, modificación y optimización de procedimientos almacenados, vistas, jobs y tablas en SQL Server",
-            "Configuración de linked servers y gestión de permisos para acceso seguro entre servidores",
-            "Desarrollo de lógica de negocio para promociones, control de merma e IMEIs en Megamóvil",
-            "Desarrollo de una herramienta de conversión de reportes SSRS (.rdl) de Visual Studio 2019 a 2012 usando C#",
-            "Mantenimiento y mejora de aplicaciones heredadas en VB.NET y DLLs VBG para dispositivos offline de campo",
-            "Integración de flujos SOA y SaaS en Mulesoft usando Java para automatización de procesos y APIs",
-            "Análisis y resolución de problemas operativos con documentación de soluciones a largo plazo",
-            "Uso de Cherwell para seguimiento de incidencias y Git Extensions para control de versiones",
-            "Aplicación de principios KISS y DRY para el desarrollo de sistemas backend mantenibles"
+            "Escribí y optimicé procedimientos, vistas y jobs en SQL Server, y configuré linked servers y permisos entre servidores.",
+            "Construí las reglas de negocio de promociones, mermas y validación de IMEI en Megamóvil.",
+            "Hice una herramienta en C# que convierte reportes SSRS de Visual Studio 2019 a 2012.",
+            "Mantuve aplicaciones en VB.NET y las DLL de los dispositivos de campo sin conexión.",
+            "Integré flujos SOA en Java con plataformas SaaS y APIs de terceros usando Mulesoft.",
+            "Resolví incidentes en producción y documenté las soluciones en Cherwell."
           ]
         },
         {
@@ -296,18 +295,12 @@
           "role": "Arquitecto de Software & Desarrollador Full Stack",
           "period": "2022 – Presente",
           "details": [
-            "🟨 ARQO (Frontend): Desarrollo completo de la interfaz de usuario con Next.js, React, Tailwind CSS y TypeScript",
-            "Diseño basado en componentes reutilizables, accesibles y responsive",
-            "Gestión de rutas centralizadas, i18n multilingüe y despliegue automatizado con Vercel",
-            "Integración de autenticación basada en JWT, SignalR para tiempo real y flujos de usuario condicionales",
-            "",
-            "🟨 Firmmo (Backend + Firma Digital): Arquitectura basada en CQRS, DTOs, repositorios y separación de responsabilidades",
-            "Firma electrónica criptográfica avanzada en documentos PDF con PDFSharp, iText7 y certificados del SAT",
-            "Manejo de firmantes internos y externos, recordatorios automáticos y control de expiración",
-            "Base de datos MongoDB con modelos embebidos, proyecciones y agregaciones complejas",
-            "Notificaciones en tiempo real con SignalR y almacenamiento seguro en Azure Blob Storage con tokens SAS",
-            "Configuración de túneles seguros, dominios y subdominios con Cloudflare Zero Trust",
-            "Despliegue continuo con Azure DevOps, entornos staging y producción, pruebas automatizadas y rollback"
+            "ARQO: encabecé el frontend en Next.js, React, TypeScript y Tailwind — componentes reutilizables y accesibles, i18n, login con JWT y actualizaciones en vivo con SignalR.",
+            "Publiqué ARQO en Vercel con dominio propio y SEO técnico.",
+            "Firmmo: diseñé y construí una plataforma de firma electrónica legal para PDF, con CQRS, repositorios y límites claros entre capas.",
+            "Agregué firmas criptográficas (visibles e invisibles) con PDFSharp, iText7 y certificados del SAT, además de firmantes internos y externos, recordatorios y reglas de expiración.",
+            "Usé agregaciones en MongoDB, SignalR para actualizaciones en vivo y Azure Blob Storage con tokens SAS para los archivos.",
+            "Protegí el acceso con Cloudflare Zero Trust y publiqué con Azure DevOps usando staging, pruebas automatizadas y rollbacks."
           ]
         }
       ]
@@ -477,6 +470,45 @@
           "percentage": 80
         }
       ]
+    },
+    "projects": {
+      "title": "Proyectos Personales",
+      "role": "Cosas que construyo y mantengo en mi tiempo libre",
+      "period": "2025 – Presente",
+      "data": [
+        {
+          "name": "RepoRinse",
+          "url": "https://github.com/robgallardof/RepoRinse",
+          "description": "Una CLI pequeña en Rust que mantiene limpios los repositorios: quita las líneas de coautoría de IA en los commits, ordena espacios y agrega límites a Claude Code, Codex, Gemini CLI y Cursor."
+        },
+        {
+          "name": "davinci-resolve-mcp",
+          "url": "https://github.com/robgallardof/davinci-resolve-mcp",
+          "description": "Me deja editar videos en DaVinci Resolve hablando con un productor de IA: cortes, subtítulos, música a tiempo y una revisión antes de cada render."
+        },
+        {
+          "name": "social-publisher-mcp",
+          "url": "https://github.com/robgallardof/social-publisher-mcp",
+          "description": "Un community manager con IA para mis videos cortos: escribe el texto de cada red, programa las publicaciones y me dice qué funcionó."
+        },
+        {
+          "name": "declaracion",
+          "url": "https://github.com/robgallardof/declaracion",
+          "description": "Me ayuda a hacer mi declaración en México desde un agente de IA: lee mis facturas (CFDI), calcula ISR e IVA y los datos se quedan en mi computadora."
+        },
+        {
+          "name": "wikdoc",
+          "url": "https://github.com/robgallardof/wikdoc",
+          "description": "Convierte cualquier carpeta de código en una base de conocimiento local a la que le puedo hacer preguntas, con embeddings y Ollama."
+        }
+      ]
     }
+  },
+  "labels": {
+    "page": "Página",
+    "of": "de",
+    "present": "Presente",
+    "credential": "Credencial",
+    "logout": "Cerrar sesión"
   }
 }

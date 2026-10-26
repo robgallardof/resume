@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Roberto Gallardo",
-    "title": "Full Stack .NET Developer | Software Architect | AI Tooling & DevOps",
+    "title": "Software Architect · Full Stack .NET Developer",
     "location": "Guadalajara, Jalisco, México",
     "email": "robgallardofl@gmail.com",
     "phone": "+52 813 701 8228",
@@ -12,20 +12,48 @@
   "downloadButton": {
     "text": "Download Resume",
     "title": "Download PDF",
-    "ariaLabel": "Download PDF"
+    "ariaLabel": "Download PDF",
+    "loading": "Generating PDF…",
+    "error": "Could not generate the PDF. Please try again."
   },
   "sections": {
     "contact": {
-      "title": "Let’s connect"
+      "title": "Contact"
     },
     "about": {
       "title": "About Me",
-      "data": "Full Stack Developer with a Master's in Software Architecture and hands-on experience across every .NET generation — from .NET Framework 2.0, 3.5 and 4.x to .NET Core and .NET 5 through 10 and 11 — including the migrations between them. I build backend services with C#, Clean Architecture and CQRS, frontends with Vue, React and Next.js, and ship them through Docker, Kubernetes and Azure DevOps. Lately I also build AI tooling: MCP servers, agent workflows and guardrails that let AI agents do real work safely. I care about code that is clear, maintainable and easy for the next person to understand."
+      "data": "I'm a software architect based in Guadalajara. I've spent seven years building and fixing .NET systems — from old .NET Framework 2.0 apps to .NET 10 and 11 — and I like the part most people avoid: understanding legacy code well enough to change it safely.\n\nI've worked with AI every day for the last four years, from ChatGPT to Codex, Claude Code and Antigravity. I treat it like a fast teammate whose work still needs a review, so I build my own MCP servers and guardrails to keep it honest.\n\nI care about clear designs, realistic estimates and code the next person can pick up without having to call me."
     },
     "skills": {
       "title": "Core Skills",
       "subtitle": "These are the technologies and practices I specialize in.",
       "data": [
+        {
+          "category": "Software Architecture",
+          "items": [
+            {
+              "name": "Clean Architecture"
+            },
+            {
+              "name": "CQRS"
+            },
+            {
+              "name": "SOLID · DRY · KISS"
+            },
+            {
+              "name": "REST API Design"
+            },
+            {
+              "name": "Microservices & Containers"
+            },
+            {
+              "name": "Legacy Modernization (.NET Framework to .NET 10)"
+            },
+            {
+              "name": "Code Review & Technical Guidance"
+            }
+          ]
+        },
         {
           "category": "Backend Development",
           "items": [
@@ -47,14 +75,6 @@
             },
             {
               "name": "Minimal APIs",
-              "level": 90
-            },
-            {
-              "name": "Clean Architecture",
-              "level": 95
-            },
-            {
-              "name": "CQRS / SOLID",
               "level": 90
             },
             {
@@ -84,10 +104,6 @@
             {
               "name": "Dependency Injection",
               "level": 95
-            },
-            {
-              "name": "REST API Design",
-              "level": 90
             },
             {
               "name": "VB.NET"
@@ -174,16 +190,22 @@
           ]
         },
         {
-          "category": "AI & Agent Tooling",
+          "category": "AI-Assisted Engineering (4 years)",
           "items": [
+            {
+              "name": "Codex"
+            },
             {
               "name": "Claude Code"
             },
             {
-              "name": "ChatGPT / Codex"
+              "name": "Antigravity"
             },
             {
-              "name": "Gemini / Antigravity"
+              "name": "ChatGPT"
+            },
+            {
+              "name": "Gemini CLI"
             },
             {
               "name": "Cursor"
@@ -198,7 +220,7 @@
               "name": "MCP Server Development"
             },
             {
-              "name": "AI Agent Workflows & Guardrails"
+              "name": "Agent Workflows, Guardrails & Review"
             }
           ]
         },
@@ -209,16 +231,16 @@
               "name": "Problem Solving"
             },
             {
-              "name": "Architecture & Scalability"
+              "name": "Clear Communication"
             },
             {
-              "name": "Team Collaboration"
+              "name": "Ownership"
             },
             {
-              "name": "Client Communication"
+              "name": "Teaching & Documentation"
             },
             {
-              "name": "Self-Taught & Proactive"
+              "name": "Continuous Learning"
             }
           ]
         }
@@ -232,29 +254,14 @@
           "role": ".NET Full Stack Developer",
           "period": "Jan 2023 – Present",
           "details": [
-            "Migrated legacy .NET 5/6 services to .NET 8 using Clean Architecture and CQRS patterns",
-            "Developed REST APIs in Docker containers orchestrated by Kubernetes",
-            "Automated CI/CD pipelines in Azure DevOps with scoped secrets and multi-environment flows",
-            "Built internal dashboards with Vue.js for monitoring and asynchronous service tracking",
-            "Migrated data flows from SQL Server to MongoDB Atlas using secure private networks",
-            "Wrote advanced JavaScript scripts and aggregation pipelines for complex MongoDB operations",
-            "Created a CLI tool in Node.js to automate MongoDB script executions across environments",
-            "Used MetaSharp.Metasephora to handle multithreaded, high-load task orchestration",
-            "Utilized ActionTemplates for runtime Razor-style rendering and logic compilation",
-            "Executed and maintained SQL scripts for large-scale data cleansing and batch updates",
-            "Consistently applied SOLID, DRY, and KISS principles across all service layers"
-          ]
-        },
-        {
-          "company": "Open Source",
-          "role": "Creator & Maintainer",
-          "period": "2025 – Present",
-          "details": [
-            "RepoRinse: local, deterministic Rust CLI that keeps repositories clean and adds guardrails to the native hooks of Claude Code, Codex, Gemini CLI and Cursor; byte-exact install/uninstall with manifests",
-            "davinci-resolve-mcp: MCP server to edit in DaVinci Resolve through an AI producer — vertical/horizontal cuts, motion, captions, beat-synced music and QA before render",
-            "social-publisher-mcp: MCP server acting as an AI community manager for short-form video across TikTok, Instagram, Facebook and YouTube",
-            "declaracion: personal tax assistant for Mexico inside an AI agent — reads CFDI, computes ISR and IVA (RESICO), data stays local",
-            "wikdoc: turns any code folder into a local, searchable knowledge base with embeddings and RAG over Ollama"
+            "Moved legacy services from .NET 5/6 to .NET 8 and reorganized them around Clean Architecture and CQRS.",
+            "Build REST APIs that run in Docker containers on Kubernetes.",
+            "Set up CI/CD in Azure DevOps with separate environments and properly scoped secrets.",
+            "Built internal Vue.js dashboards to follow asynchronous services as they run.",
+            "Moved data flows from SQL Server to MongoDB Atlas over private networks.",
+            "Write the MongoDB aggregation pipelines and scripts behind complex data work, plus a small Node.js CLI that runs them in every environment.",
+            "Orchestrate heavy multithreaded workloads with MetaSharp.Metasephora and generate Razor-style code at runtime with ActionTemplates.",
+            "Maintain the SQL scripts behind large data clean-ups and batch updates."
           ]
         },
         {
@@ -262,17 +269,12 @@
           "role": "Software Construction Coordinator B (.NET Developer)",
           "period": "Feb 2022 – Dec 2022",
           "details": [
-            "Led migration of .NET Framework 4.8 systems to .NET 5 microservices using Clean Architecture",
-            "Developed RESTful APIs integrated with Informix and SQL Server using C#",
-            "Customized dynamic templates and implemented flexible rendering logic",
-            "Maintained WCF services and ASP.NET applications using C#, JavaScript, and CSS",
-            "Integrated biometric systems via custom C# libraries (Watson Mini, Digital Persona, U ARE U 4500)",
-            "Migrated push notifications from Google Cloud Messaging (GCM) to Firebase Cloud Messaging (FCM)",
-            "Developed a Kotlin-based Android app to test mobile push notification flows",
-            "Validated push endpoints with Postman and integrated feedback from mobile clients",
-            "Created and optimized stored procedures, views, and jobs on SQL Server and Informix",
-            "Used Jira for task tracking and Git (TortoiseGit, Sourcetree) for version control",
-            "Oversaw coordination and delivery of software construction tasks across teams"
+            "Led the move from .NET Framework 4.8 to .NET 5 microservices with Clean Architecture.",
+            "Built C# REST APIs on top of Informix and SQL Server and tuned the procedures, views and jobs behind them.",
+            "Connected biometric readers (Watson Mini, Digital Persona, U.are.U 4500) through custom C# libraries.",
+            "Moved push notifications from GCM to Firebase Cloud Messaging and wrote a small Kotlin Android app to test them end to end.",
+            "Kept WCF services and ASP.NET apps running and built flexible templates for dynamic rendering.",
+            "Coordinated construction tasks across teams with Jira and Git."
           ]
         },
         {
@@ -280,15 +282,12 @@
           "role": "VB.NET / C# / Java Developer",
           "period": "Nov 2019 – Jan 2022",
           "details": [
-            "Created, modified, and optimized stored procedures, views, jobs, and tables in SQL Server",
-            "Configured linked servers and permission structures for cross-server access",
-            "Implemented business logic for promotional rules, loss tracking, and IMEI validation in Megamóvil",
-            "Built an internal tool to convert SSRS (.rdl) reports from Visual Studio 2019 to 2012 using C#",
-            "Maintained legacy VB.NET applications and VBG DLLs for offline field devices",
-            "Integrated Java-based SOA flows with SaaS platforms and third-party APIs using Mulesoft",
-            "Resolved incidents and documented long-term technical solutions using Cherwell",
-            "Used Git Extensions for version control and codebase stability",
-            "Applied DRY and KISS principles in backend system development"
+            "Wrote and optimized SQL Server procedures, views and jobs, and set up linked servers and permissions between servers.",
+            "Built the business rules for promotions, loss tracking and IMEI validation in Megamóvil.",
+            "Created a C# tool that converts SSRS reports from Visual Studio 2019 to 2012.",
+            "Maintained VB.NET apps and the DLLs used by offline field devices.",
+            "Integrated Java SOA flows with SaaS platforms and third-party APIs through Mulesoft.",
+            "Solved production incidents and documented the fixes in Cherwell."
           ]
         },
         {
@@ -296,18 +295,12 @@
           "role": "Software Architect & Full Stack Developer",
           "period": "2022 – Present",
           "details": [
-            "ARQO (Frontend): Led the development of a complete frontend UI with Next.js, React, Tailwind CSS, and TypeScript",
-            "Designed reusable, accessible, fully responsive components with centralized routing and i18n",
-            "Implemented JWT-based authentication, conditional flows, and SignalR for real-time communication",
-            "Deployed via Vercel with custom domain configuration and technical SEO optimization",
-            "Firmmo (Backend + Digital Signature): Architected and developed a robust legal digital signing platform for PDF documents",
-            "Applied CQRS, DTOs, repositories, and clean separation of concerns for service scalability",
-            "Integrated cryptographic digital signatures (visual/invisible) using PDFSharp, iText7, and SAT certificates",
-            "Managed internal and external signers, automated reminders, and controlled expiration policies",
-            "Used MongoDB with embedded models, projections, and complex aggregations",
-            "Enabled real-time updates via SignalR and secure file storage with Azure Blob Storage and SAS tokens",
-            "Configured secure tunnels and domain routing using Cloudflare Zero Trust",
-            "Handled CI/CD with Azure DevOps, staging environments, automated tests, and controlled rollbacks"
+            "ARQO: led the frontend in Next.js, React, TypeScript and Tailwind — reusable, accessible components, i18n, JWT login and live updates over SignalR.",
+            "Deployed ARQO on Vercel with a custom domain and technical SEO.",
+            "Firmmo: designed and built a legal e-signature platform for PDFs, with CQRS, repositories and clear boundaries between layers.",
+            "Added cryptographic signatures (visible and invisible) with PDFSharp, iText7 and SAT certificates, plus internal and external signers, reminders and expiration rules.",
+            "Used MongoDB aggregations, SignalR for live updates and Azure Blob Storage with SAS tokens for files.",
+            "Protected access with Cloudflare Zero Trust and shipped through Azure DevOps with staging, automated tests and rollbacks."
           ]
         }
       ]
@@ -477,6 +470,45 @@
           "percentage": 80
         }
       ]
+    },
+    "projects": {
+      "title": "Side Projects",
+      "role": "Things I build and maintain on my own time",
+      "period": "2025 – Present",
+      "data": [
+        {
+          "name": "RepoRinse",
+          "url": "https://github.com/robgallardof/RepoRinse",
+          "description": "A small Rust CLI that keeps repositories clean: removes AI co-author lines from commits, tidies whitespace and adds guardrails to Claude Code, Codex, Gemini CLI and Cursor."
+        },
+        {
+          "name": "davinci-resolve-mcp",
+          "url": "https://github.com/robgallardof/davinci-resolve-mcp",
+          "description": "Lets me edit videos in DaVinci Resolve by talking to an AI producer: cuts, captions, music on the beat and a quality check before every render."
+        },
+        {
+          "name": "social-publisher-mcp",
+          "url": "https://github.com/robgallardof/social-publisher-mcp",
+          "description": "An AI community manager for my short videos: writes the copy for each network, schedules the posts and tells me what worked."
+        },
+        {
+          "name": "declaracion",
+          "url": "https://github.com/robgallardof/declaracion",
+          "description": "Helps me file my taxes in Mexico from an AI agent: reads my invoices (CFDI), calculates ISR and IVA and keeps the data on my computer."
+        },
+        {
+          "name": "wikdoc",
+          "url": "https://github.com/robgallardof/wikdoc",
+          "description": "Turns any code folder into a local knowledge base I can ask questions to, using embeddings and Ollama."
+        }
+      ]
     }
+  },
+  "labels": {
+    "page": "Page",
+    "of": "of",
+    "present": "Present",
+    "credential": "Credential",
+    "logout": "Sign out"
   }
 }

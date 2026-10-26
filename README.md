@@ -1,7 +1,12 @@
 # Roberto Gallardo — Résumé
 
 Bilingual (EN/ES) résumé built with Next.js 16, React 19 and Tailwind CSS 4, deployed on Vercel at
-`cv.robertogallardo.dev`. It can be downloaded as a PDF from the page.
+`cv.robertogallardo.dev`.
+
+- **Web:** a printable sheet with a header, a sidebar (contact, skills, languages, education) and a main column
+  (profile, experience timeline, open-source projects, certifications).
+- **PDF:** the download button builds a real A4 PDF with `@react-pdf/renderer` — selectable text, clickable links,
+  page numbers and metadata — from the same data as the web page.
 
 ## Private access
 
@@ -24,4 +29,19 @@ pnpm lint
 pnpm build
 ```
 
-Content lives in `app/i18n/locales/en.json` and `es.json`.
+Content lives in `app/i18n/locales/en.json` and `es.json`; `lib/resume.ts` turns it into the typed model that both
+the web view (`components/resume/ResumeView.tsx`) and the PDF (`components/pdf/ResumeDocument.tsx`) render.
+
+## Tests
+
+`pnpm test` runs Vitest:
+
+| Suite | Covers |
+|---|---|
+| `tests/unit/access.test.ts` | Token derivation, constant-time compare, open-redirect protection, HTML escaping, language pick |
+| `tests/unit/resume.test.ts` | EN/ES content parity, contact data, completed master's, https links, no dead domains, PDF-safe text |
+| `tests/integration/proxy.test.ts` | The password gate end to end: blocked pages and chunks, login, cookie flags, revocation, logout |
+| `tests/integration/resume-view.test.tsx` | The web résumé renders every section, job and link in both languages |
+| `tests/integration/pdf.test.tsx` | A real A4 PDF with vector text and links, exactly two pages, descriptive file name |
+
+CI (`.github/workflows/ci.yml`) runs lint, tests and build on every push and pull request.
