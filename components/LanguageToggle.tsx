@@ -1,9 +1,9 @@
 'use client'
 
-import { JSX, useEffect, useState } from 'react'
+import { JSX } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FiGlobe } from 'react-icons/fi'
 import Cookies from 'js-cookie'
-import i18n from '@/app/i18n'
 
 type Locale = 'en' | 'es'
 
@@ -11,32 +11,14 @@ type Locale = 'en' | 'es'
  * LanguageToggle is a compact button that toggles the site language
  * between English and Spanish using cookies and i18n.
  *
- * It waits until the client has mounted and the language is loaded
- * before rendering anything to prevent hydration mismatch.
+ * The current language comes from i18n (synchronized from the cookie by the
+ * i18n provider); LanguageGate keeps it from rendering on the server.
  *
  * @returns {JSX.Element | null}
  */
 export default function LanguageToggle(): JSX.Element | null {
-  const [currentLocale, setCurrentLocale] = useState<Locale | null>(null)
-
-  /**
-   * Type guard for valid locales.
-   */
-  const isValidLocale = (value: unknown): value is Locale => {
-    return value === 'en' || value === 'es'
-  }
-
-  /**
-   * Load initial language from cookie once mounted on client.
-   */
-  useEffect(() => {
-    const cookieLang = Cookies.get('language')
-    const defaultLang: Locale = isValidLocale(cookieLang) ? cookieLang : 'en'
-    i18n.changeLanguage(defaultLang)
-    setCurrentLocale(defaultLang)
-  }, [])
-
-  if (!currentLocale) return null
+  const { i18n } = useTranslation()
+  const currentLocale: Locale = i18n.resolvedLanguage === 'es' ? 'es' : 'en'
 
   /**
    * Toggle the site language between 'en' and 'es'.
@@ -45,7 +27,6 @@ export default function LanguageToggle(): JSX.Element | null {
     const nextLocale: Locale = currentLocale === 'en' ? 'es' : 'en'
     Cookies.set('language', nextLocale, { expires: 365 })
     i18n.changeLanguage(nextLocale)
-    setCurrentLocale(nextLocale)
   }
 
   return (

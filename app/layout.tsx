@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Roberto Gallardo | Resume",
   description: "Full Stack .NET Developer Resume",
+  robots: { index: false, follow: false },
 };
 
 /**

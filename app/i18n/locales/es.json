@@ -1,9 +1,9 @@
 {
   "personal": {
     "name": "Roberto Gallardo",
-    "title": "Desarrollador Full Stack .NET | Arquitectura de Software | Azure & DevOps",
+    "title": "Desarrollador Full Stack .NET | Arquitecto de Software | Herramientas de IA y DevOps",
     "location": "Guadalajara, Jalisco, México",
-    "email": "contact@robertogallardo.dev",
+    "email": "robgallardofl@gmail.com",
     "phone": "+52 813 701 8228",
     "website": "https://robertogallardo.dev",
     "github": "https://github.com/robgallardof",
@@ -20,7 +20,7 @@
     },
     "about": {
       "title": "Sobre mí",
-      "data": "Soy un desarrollador Full Stack especializado en crear software escalable usando .NET en el backend y Vue, React o Next.js en el frontend. Me enfoco en escribir código limpio, con arquitectura modular y mantenibilidad a largo plazo. Soy autodidacta, proactivo y siempre busco formas más inteligentes de resolver problemas reales."
+      "data": "Desarrollador Full Stack con Maestría en Arquitectura de Software y experiencia práctica en todas las generaciones de .NET — desde .NET Framework 2.0, 3.5 y 4.x hasta .NET Core y .NET 5 a 10 y 11 — incluidas las migraciones entre ellas. Construyo servicios backend con C#, Clean Architecture y CQRS, frontends con Vue, React y Next.js, y los despliego con Docker, Kubernetes y Azure DevOps. Últimamente también desarrollo herramientas de IA: servidores MCP, flujos de agentes y límites que permiten que los agentes de IA hagan trabajo real de forma segura. Me importa un código claro, mantenible y fácil de entender para quien sigue."
     },
     "skills": {
       "title": "Habilidades Clave",
@@ -29,55 +29,197 @@
         {
           "category": "Desarrollo Backend",
           "items": [
-            { "name": "C#", "level": 95 },
-            { "name": ".NET 5–8", "level": 95 },
-            { "name": "ASP.NET Core", "level": 90 },
-            { "name": "APIs Minimalistas", "level": 90 },
-            { "name": "Arquitectura Limpia", "level": 95 },
-            { "name": "CQRS / SOLID", "level": 90 },
-            { "name": "EF Core", "level": 85 },
-            { "name": "MongoDB", "level": 90 },
-            { "name": "SQL Server", "level": 90 },
-            { "name": "Autenticación y JWT", "level": 90 },
-            { "name": "WebSockets / SignalR", "level": 85 },
-            { "name": "Pruebas Unitarias e Integración", "level": 90 },
-            { "name": "Inyección de Dependencias", "level": 95 },
-            { "name": "Diseño de APIs REST", "level": 90 }
+            {
+              "name": "C#",
+              "level": 95
+            },
+            {
+              "name": ".NET Framework 2.0 – 4.8",
+              "level": 95
+            },
+            {
+              "name": ".NET Core / .NET 5 – 10 / 11",
+              "level": 95
+            },
+            {
+              "name": "ASP.NET Core",
+              "level": 90
+            },
+            {
+              "name": "APIs Minimalistas",
+              "level": 90
+            },
+            {
+              "name": "Arquitectura Limpia",
+              "level": 95
+            },
+            {
+              "name": "CQRS / SOLID",
+              "level": 90
+            },
+            {
+              "name": "EF Core",
+              "level": 85
+            },
+            {
+              "name": "MongoDB",
+              "level": 90
+            },
+            {
+              "name": "SQL Server",
+              "level": 90
+            },
+            {
+              "name": "Autenticación y JWT",
+              "level": 90
+            },
+            {
+              "name": "WebSockets / SignalR",
+              "level": 85
+            },
+            {
+              "name": "Pruebas Unitarias e Integración",
+              "level": 90
+            },
+            {
+              "name": "Inyección de Dependencias",
+              "level": 95
+            },
+            {
+              "name": "Diseño de APIs REST",
+              "level": 90
+            },
+            {
+              "name": "VB.NET"
+            },
+            {
+              "name": "WCF / ASP.NET Web Forms"
+            },
+            {
+              "name": "Rust"
+            },
+            {
+              "name": "Python"
+            }
           ]
         },
         {
           "category": "Desarrollo Frontend",
           "items": [
-            { "name": "React", "level": 85 },
-            { "name": "Next.js", "level": 85 },
-            { "name": "Vue.js", "level": 80 },
-            { "name": "React Native", "level": 75 },
-            { "name": "Tailwind CSS", "level": 95 },
-            { "name": "ShadCN UI", "level": 90 }
+            {
+              "name": "React",
+              "level": 85
+            },
+            {
+              "name": "Next.js",
+              "level": 85
+            },
+            {
+              "name": "Vue.js",
+              "level": 80
+            },
+            {
+              "name": "React Native",
+              "level": 75
+            },
+            {
+              "name": "Tailwind CSS",
+              "level": 95
+            },
+            {
+              "name": "ShadCN UI",
+              "level": 90
+            }
           ]
         },
         {
           "category": "DevOps y Herramientas",
           "items": [
-            { "name": "Docker", "level": 85 },
-            { "name": "Kubernetes", "level": 75 },
-            { "name": "Azure DevOps", "level": 90 },
-            { "name": "Pipelines CI/CD", "level": 90 },
-            { "name": "Git / GitHub", "level": 95 },
-            { "name": "Nginx", "level": 85 },
-            { "name": "Cloudflare", "level": 85 },
-            { "name": "Linux (Fedora / Ubuntu)", "level": 85 },
-            { "name": "Android Studio / Generación de APK", "level": 75 }
+            {
+              "name": "Docker",
+              "level": 85
+            },
+            {
+              "name": "Kubernetes",
+              "level": 75
+            },
+            {
+              "name": "Azure DevOps",
+              "level": 90
+            },
+            {
+              "name": "Pipelines CI/CD",
+              "level": 90
+            },
+            {
+              "name": "Git / GitHub",
+              "level": 95
+            },
+            {
+              "name": "Nginx",
+              "level": 85
+            },
+            {
+              "name": "Cloudflare",
+              "level": 85
+            },
+            {
+              "name": "Linux (Fedora / Ubuntu)",
+              "level": 85
+            },
+            {
+              "name": "Android Studio / Generación de APK",
+              "level": 75
+            }
+          ]
+        },
+        {
+          "category": "IA y Herramientas para Agentes",
+          "items": [
+            {
+              "name": "Claude Code"
+            },
+            {
+              "name": "ChatGPT / Codex"
+            },
+            {
+              "name": "Gemini / Antigravity"
+            },
+            {
+              "name": "Cursor"
+            },
+            {
+              "name": "DeepSeek"
+            },
+            {
+              "name": "Ollama (LLMs locales y RAG)"
+            },
+            {
+              "name": "Desarrollo de Servidores MCP"
+            },
+            {
+              "name": "Flujos y Límites para Agentes de IA"
+            }
           ]
         },
         {
           "category": "Fortalezas Profesionales",
           "items": [
-            { "name": "Resolución de Problemas" },
-            { "name": "Arquitectura y Escalabilidad" },
-            { "name": "Trabajo en Equipo" },
-            { "name": "Comunicación con Clientes" },
-            { "name": "Autodidacta y Proactivo" }
+            {
+              "name": "Resolución de Problemas"
+            },
+            {
+              "name": "Arquitectura y Escalabilidad"
+            },
+            {
+              "name": "Trabajo en Equipo"
+            },
+            {
+              "name": "Comunicación con Clientes"
+            },
+            {
+              "name": "Autodidacta y Proactivo"
+            }
           ]
         }
       ]
@@ -101,6 +243,18 @@
             "Uso de ActionTemplates para renderizado dinámico y generación de código estilo Razor en tiempo de ejecución",
             "Ejecución y mantenimiento de scripts SQL de alto impacto para limpieza y operaciones masivas de datos",
             "Aplicación constante de principios SOLID, DRY y KISS en toda la base de código"
+          ]
+        },
+        {
+          "company": "Código abierto",
+          "role": "Creador y Mantenedor",
+          "period": "2025 – Presente",
+          "details": [
+            "RepoRinse: CLI local y determinista en Rust que mantiene limpios los repositorios y añade límites en los hooks nativos de Claude Code, Codex, Gemini CLI y Cursor; instalación y desinstalación exactas con manifests",
+            "davinci-resolve-mcp: servidor MCP para editar en DaVinci Resolve con un productor de IA — cortes verticales/horizontales, movimiento, subtítulos, música a tiempo y revisión antes del render",
+            "social-publisher-mcp: servidor MCP que funciona como community manager con IA para video corto en TikTok, Instagram, Facebook y YouTube",
+            "declaracion: asistente de impuestos personales en México dentro de un agente de IA — lee CFDI, calcula ISR e IVA (RESICO) y los datos se quedan en local",
+            "wikdoc: convierte cualquier carpeta de código en una base de conocimiento local con embeddings y RAG sobre Ollama"
           ]
         },
         {
@@ -162,8 +316,8 @@
       "title": "Educación",
       "data": [
         {
-          "degree": "Maestría en Arquitectura de Software (En curso)",
-          "institution": "AICAD Business School",
+          "degree": "Maestría en Arquitectura de Software",
+          "institution": "Università degli Studi Guglielmo Marconi (cursada en AICAD Business School)",
           "period": "2024 – 2025"
         },
         {

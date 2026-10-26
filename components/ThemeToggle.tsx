@@ -2,13 +2,14 @@
 
 import { useTheme } from "next-themes";
 import { FiMoon, FiSun } from "react-icons/fi";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
+
+const noopSubscribe = () => () => {};
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  // true on the client, false during server rendering: avoids a theme hydration mismatch
+  const mounted = useSyncExternalStore(noopSubscribe, () => true, () => false);
 
   if (!mounted) return null;
 
