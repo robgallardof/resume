@@ -6,13 +6,12 @@ Bilingual (EN/ES) résumé built with Next.js 16, React 19 and Tailwind CSS 4, d
 ## Private access
 
 The whole site — pages and JavaScript chunks — is behind a password checked on the server by `proxy.ts`.
+Visitors see a modal over a blurred, data-free résumé silhouette; nothing of the real résumé loads before login.
 
-| Variable | Required | Purpose |
-|---|---|---|
-| `CV_PASSWORD` | yes | Password visitors type to open the résumé. Without it the site stays locked. |
-
-- Set it in **Vercel → Project → Settings → Environment Variables** (Production and Preview), then redeploy.
-- Access lasts 30 days per browser (HttpOnly cookie). Changing `CV_PASSWORD` signs everybody out.
+- The default password is stored in `proxy.ts` only as an HMAC token, never in plain text.
+- To use a different password, set `CV_PASSWORD` in **Vercel → Project → Settings → Environment Variables** and
+  redeploy; it overrides the default.
+- Access lasts 30 days per browser (HttpOnly cookie). Changing the password signs everybody out.
 - Visiting `/__logout` signs the current browser out.
 - Keep this repository **private**: the résumé content lives in `app/i18n/locales/*.json`.
 
@@ -20,7 +19,7 @@ The whole site — pages and JavaScript chunks — is behind a password checked 
 
 ```sh
 pnpm install
-CV_PASSWORD=dev pnpm dev      # PowerShell: $env:CV_PASSWORD="dev"; pnpm dev
+pnpm dev                      # uses the default password; CV_PASSWORD overrides it
 pnpm lint
 pnpm build
 ```
