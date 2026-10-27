@@ -23,6 +23,8 @@ Visitors see a modal over a blurred, data-free résumé silhouette; nothing of t
 - Access lasts 30 days per browser (HttpOnly cookie). Changing the password signs everybody out.
 - Visiting `/__logout` signs the current browser out.
 - Keep this repository **private**: the résumé content lives in `app/i18n/locales/*.json`.
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 
 ## Development
 
@@ -35,6 +37,8 @@ pnpm build
 
 Content lives in `app/i18n/locales/en.json` and `es.json`; `lib/resume.ts` turns it into the typed model that both
 the web view (`components/resume/ResumeView.tsx`) and the PDF (`components/pdf/ResumeDocument.tsx`) render.
+<p align="center"><img src="assets/readme-builder/kit/wave.svg" alt="" width="100%" /></p>
+
 
 ## Tests
 
@@ -50,7 +54,7 @@ the web view (`components/resume/ResumeView.tsx`) and the PDF (`components/pdf/R
 
 CI (`.github/workflows/ci.yml`) runs lint, tests and build on every push and pull request.
 
-<p align="center"><a href="#top">Back to top</a></p>
+<p align="center"><a href="#top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme-builder/kit/btn-back-to-top-outline-sm-dark.svg" /><img src="assets/readme-builder/kit/btn-back-to-top-outline-sm-light.svg" alt="Back to top" height="34" /></picture></a></p>
 
 <!-- readme-builder:signature:start -->
 <p align="center"><a href="https://github.com/robgallardof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/brand/signature-en-dark.svg" /><img src="assets/readme/brand/signature-en-light.svg" alt="Roberto Gallardo / Résumé / Roberto Gallardo" width="100%" /></picture></a></p>
