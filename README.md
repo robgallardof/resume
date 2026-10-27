@@ -1,4 +1,8 @@
-# Roberto Gallardo — Résumé
+<a id="top"></a>
+
+<h1 align="center">Roberto Gallardo — Résumé</h1>
+
+<p align="center">One bilingual résumé for the web and PDF. Access is private; the development guide explains how to work on it locally.</p>
 
 Bilingual (EN/ES) résumé built with Next.js 16, React 19 and Tailwind CSS 4, deployed on Vercel at
 `cv.robertogallardo.dev`.
@@ -45,3 +49,9 @@ the web view (`components/resume/ResumeView.tsx`) and the PDF (`components/pdf/R
 | `tests/integration/pdf.test.tsx` | A real A4 PDF with vector text and links, exactly two pages, descriptive file name |
 
 CI (`.github/workflows/ci.yml`) runs lint, tests and build on every push and pull request.
+
+<p align="center"><a href="#top">Back to top</a></p>
+
+<!-- readme-builder:signature:start -->
+<p align="center"><a href="https://github.com/robgallardof"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/readme/brand/signature-en-dark.svg" /><img src="assets/readme/brand/signature-en-light.svg" alt="Roberto Gallardo / Résumé / Roberto Gallardo" width="100%" /></picture></a></p>
+<!-- readme-builder:signature:end -->
